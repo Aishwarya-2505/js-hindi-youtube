@@ -28,3 +28,32 @@ function loginUserMessage(username = "sam"){
     return `${username} just logged in`
 }
 console.log(loginUserMessage("hitesh"))
+
+
+function calculateCartPrice(va1,val2,...num1) { //... is spread and also rest but depend on the usecase it chnages so here it is rest 
+    return num1
+}
+console.log (calculateCartPrice(200, 400, 500, 2000))
+
+const user = {
+    username: "hitesh",
+    prices: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+handleObject(user)
+
+handleObject({ //direct pass the object not like first create and then pass 
+    username: "sam",
+    price: 399
+})
+
+const mynewarray = [200, 400, 100, 600]
+
+function returnSecondValue(mynewarray){ //in bracket we can keep any name
+    return mynewarray[1]
+}
+// console.log(returnSecondValue(mynewarray));
+console.log(returnSecondValue([200,400,100,600])); //we can directly pass the values  also 
